@@ -20,21 +20,21 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="Hello World">
+    <meta name="description" content="git提交后撤销commit git reset – soft HEAD^   HEAD^的意思是上一个版本，也可以写成HEAD~1 如果你进行了2次commit，想都撤回，可以使用HEAD~2  – mixed  意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset – mixed HEAD^ 和 git reset HEAD^">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
-<meta property="og:url" content="http://yoursite.com/2020/05/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="git提交后撤销commit和修改备注的方法">
+<meta property="og:url" content="http://yoursite.com/2020/06/18/git%E6%8F%90%E4%BA%A4%E5%90%8E%E6%92%A4%E9%94%80commit%E5%92%8C%E4%BF%AE%E6%94%B9%E5%A4%87%E6%B3%A8%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hello World">
+<meta property="og:description" content="git提交后撤销commit git reset – soft HEAD^   HEAD^的意思是上一个版本，也可以写成HEAD~1 如果你进行了2次commit，想都撤回，可以使用HEAD~2  – mixed  意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset – mixed HEAD^ 和 git reset HEAD^">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-13T09:34:24.000Z">
-<meta property="article:modified_time" content="2020-05-13T09:56:51.852Z">
+<meta property="article:published_time" content="2020-06-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-06-18T10:40:40.841Z">
 <meta property="article:author" content="vgtiger">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>我的第一篇文章 · vgtiger&#39;s Studio</title>
+    <title>git提交后撤销commit和修改备注的方法 · vgtiger&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -229,7 +229,7 @@
                 <a href="/" >vgtiger&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">我的第一篇文章</a>
+                <a href="#" class="post-name">git提交后撤销commit和修改备注的方法</a>
             </div>
     </div>
     
@@ -259,7 +259,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            我的第一篇文章
+            git提交后撤销commit和修改备注的方法
             <!-- 404 -->
             
         </h1>
@@ -278,12 +278,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">2</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">187</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2020/05/13</span>
+                    <span class="post-intro-time">2020/06/18</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -407,7 +407,23 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2>
+        <h4 id="git提交后撤销commit"><a href="#git提交后撤销commit" class="headerlink" title="git提交后撤销commit"></a>git提交后撤销commit</h4><blockquote>
+<p>git reset – soft HEAD^  </p>
+<p>HEAD^的意思是上一个版本，也可以写成HEAD~1</p>
+<p>如果你进行了2次commit，想都撤回，可以使用HEAD~2</p>
+<p> – mixed </p>
+<p>意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作</p>
+<p>这个为默认参数,git reset – mixed HEAD^ 和 git reset HEAD^ 效果是一样的</p>
+<p> – soft  </p>
+<p>不删除工作空间改动代码，撤销commit，不撤销git add . </p>
+<p> – hard</p>
+<p>删除工作空间改动代码，撤销commit，撤销git add . </p>
+<p>注意完成这个操作后，就恢复到了上一次的commit状态</p>
+</blockquote>
+<h4 id="git修改commit备注的方法"><a href="#git修改commit备注的方法" class="headerlink" title="git修改commit备注的方法"></a>git修改commit备注的方法</h4><blockquote>
+<p>git commit – amend<br>此时会进入默认vim编辑器，修改注释完毕后保存然后<br>git push 即可</p>
+</blockquote>
+
     </article>
     <!-- license  -->
     
@@ -415,17 +431,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2020/05/13/linux%E9%85%8D%E7%BD%AEDNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/" title= "linux配置DNS服务器和域名解析">
-                    <div class="nextTitle">linux配置DNS服务器和域名解析</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/05/13/hello-world/" title= "Hello World">
-                    <div class="prevTitle">Hello World</div>
+                <a href= "/2020/06/11/hello-md/" title= "hello.md">
+                    <div class="prevTitle">hello.md</div>
                 </a>
             
         </li>
@@ -563,7 +574,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">1.</span> <span class="toc-text">Hello World</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#git提交后撤销commit"><span class="toc-number">1.</span> <span class="toc-text">git提交后撤销commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git修改commit备注的方法"><span class="toc-number">2.</span> <span class="toc-text">git修改commit备注的方法</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>

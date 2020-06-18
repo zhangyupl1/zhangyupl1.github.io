@@ -354,6 +354,40 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/06/18/git%E6%8F%90%E4%BA%A4%E5%90%8E%E6%92%A4%E9%94%80commit%E5%92%8C%E4%BF%AE%E6%94%B9%E5%A4%87%E6%B3%A8%E7%9A%84%E6%96%B9%E6%B3%95/" >
+            
+                <span>git提交后撤销commit和修改备注的方法</span>
+        </a>
+        <div class="abstract-content">
+            git提交后撤销commit
+git reset – soft HEAD^  
+HEAD^的意思是上一个版本，也可以写成HEAD~1
+如果你进行了2次commit，想都撤回，可以使用HEAD~2
+ – mixed 
+意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作
+这个为默认参数,git reset – mixed HEAD^ 和 git reset HEAD^ 效果是一样的
+ – soft  
+不删除工作空间改动代码，撤销commit，不撤销git add . 
+ – hard
+删除工作空间改动代码，撤销commit，撤销git add . 
+注意完成...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/06/18</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/06/11/hello-md/" >
             
                 <span>hello.md</span>
@@ -513,9 +547,16 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 6
         </div>
         <!-- search  -->
         
@@ -526,12 +567,17 @@
     
     
     
-    <div class="archive-year"> Invalid date </div>
+    <div class="archive-year"> 2020 </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/05/13/linux%E9%85%8D%E7%BD%AEDNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/" >linux配置DNS服务器和域名解析</a>
+            <span class="archive-post-date">06/18</span><a class="archive-post-title" href= "/2020/06/18/git%E6%8F%90%E4%BA%A4%E5%90%8E%E6%92%A4%E9%94%80commit%E5%92%8C%E4%BF%AE%E6%94%B9%E5%A4%87%E6%B3%A8%E7%9A%84%E6%96%B9%E6%B3%95/" >git提交后撤销commit和修改备注的方法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/11</span><a class="archive-post-title" href= "/2020/06/11/hello-md/" >hello.md</a>
         </li>
     
     
@@ -554,13 +600,22 @@
     
         </ul>
     
-    <div class="archive-year"> 2020 </div>
+    <div class="archive-year"> Invalid date </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/11</span><a class="archive-post-title" href= "/2020/06/11/hello-md/" >hello.md</a>
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/05/13/linux%E9%85%8D%E7%BD%AEDNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/" >linux配置DNS服务器和域名解析</a>
         </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
     
     
         <li class="archive-post-item">
