@@ -356,6 +356,43 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/05/20/Linux%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%A7%E5%B0%8F/" >
+            
+                <span>Linux查看文件和文件夹大小</span>
+        </a>
+        <div class="abstract-content">
+            1、查看当前系统的存储使用情况
+df -h  如下图所示
+
+
+2、查看文件夹大小
+du -h  会显示当前路径所有层级下的文件和文件夹的大小
+
+du -h –max-depth=1 yourpath 会显示指定目录的空间大小，以及下属首层各文件夹的大小。这里可以调节–max-depth参数，用来控制想要查看的目录的深度
+
+du -h –max-depth=0 yourpath 只会显示你指定的目录的空间大小
+
+若只想看文件大小，也可以直接在文件所在目录运行ls -htla
+
+
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/05/20</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/07/31/ORACLE%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" >
             
                 <span>ORACLE数据库基础知识</span>
@@ -629,9 +666,18 @@ ipconfig/flushdns
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 6
         </div>
         <!-- search  -->
         
@@ -686,6 +732,20 @@ ipconfig/flushdns
     
         <li class="archive-post-item">
             <span class="archive-post-date">05/13</span><a class="archive-post-title" href= "/2020/05/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" >我的第一篇文章</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2021/05/20/Linux%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%A7%E5%B0%8F/" >Linux查看文件和文件夹大小</a>
         </li>
     
     </div>
